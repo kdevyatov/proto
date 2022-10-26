@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Domain\Logic\**" />
+    <Compile Remove="Domain\Model\DTO\**" />
+    <Compile Remove="Новая папка\**" />
+    <EmbeddedResource Remove="Domain\Logic\**" />
+    <EmbeddedResource Remove="Domain\Model\DTO\**" />
+    <EmbeddedResource Remove="Новая папка\**" />
+    <None Remove="Domain\Logic\**" />
+    <None Remove="Domain\Model\DTO\**" />
+    <None Remove="Новая папка\**" />
+  </ItemGroup>
+
+</Project>

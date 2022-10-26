@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Документ&#xD;&#xA;версия 1.0.1">
+    <Position X="0.5" Y="0.5" Height="0.939" Width="1.306" />
+  </Comment>
+  <Class Name="CRM.Domain.Model.Client" Collapsed="true">
+    <Position X="2" Y="3.25" Width="1.5" />
+    <AssociationLine Name="Orders" Type="CRM.Domain.Model.Order" ManuallyRouted="true">
+      <Path>
+        <Point X="3.025" Y="3.941" />
+        <Point X="3.025" Y="5.249" />
+        <Point X="3.025" Y="5.249" />
+        <Point X="3.025" Y="12.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAFAAAAAAAAAAAAAABAAAAAAAgAAAAAiAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\User\Client.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Addresses" />
+      <Property Name="Orders" />
+      <Property Name="Contacts" />
+      <Property Name="Notificatons" />
+      <Property Name="SupportRequests" />
+      <Property Name="Roles" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CRM.Domain.Model.Attachment" Collapsed="true">
+    <Position X="4.5" Y="9.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAABAAAAAAAAEAAAAAAQAAAAAAAAQAAAAAAAAE=</HashCode>
+      <FileName>Domain\Model\Common\Document.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AttachmentType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CRM.Domain.Model.Address" Collapsed="true">
+    <Position X="4.5" Y="8.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Domain\Model\Common\Address.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AddressType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CRM.Domain.Model.Order" Collapsed="true">
+    <Position X="1.75" Y="12.5" Width="1.5" />
+    <AssociationLine Name="Items" Type="CRM.Domain.Model.OrderItem" ManuallyRouted="true">
+      <Path>
+        <Point X="3.25" Y="12.843" />
+        <Point X="4.5" Y="12.843" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAACCAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Order\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OrderStatus" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Items" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Orientation="Left" Position="0.237" />
+  </Class>
+  <Class Name="CRM.Domain.Model.IdentityUser" Collapsed="true">
+    <Position X="2" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAEAAACAAAAGAAAAQAAQAAAAAAAAiAAAEAAAAAAg=</HashCode>
+      <FileName>Domain\Model\User\IdentityUser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CRM.Domain.Model.Task" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>Domain\Model\Task\Task.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ClientSupportRequest" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Comments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CRM.Domain.Model.Contact" Collapsed="true">
+    <Position X="4.5" Y="7.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Common\Contact.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ContactType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CRM.Domain.Model.AbstractTask" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Task\AbstractTask.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CRM.Domain.Model.OrderItem" Collapsed="true">
+    <Position X="4.5" Y="12.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Order\OrderItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Product" />
+      <Property Name="OrderItemStatus" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CRM.Domain.Model.Product" Collapsed="true">
+    <Position X="7.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICACAAAAASAgAAAAAAAAAAQAAQAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Domain\Model\Product\Product.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProductCategory" />
+      <Property Name="ProductStatus1" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ProductStocks" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CRM.Domain.Model.ProductCategory" Collapsed="true">
+    <Position X="7.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Product\ProductCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRM.Domain.Model.Category" Collapsed="true">
+    <Position X="10.25" Y="14" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Domain\Model\Product\Category.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProductCategory" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CRM.Domain.Model.ClientSupportRequest" Collapsed="true">
+    <Position X="11.5" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAIEA=</HashCode>
+      <FileName>Domain\Model\Request\ClientSupportRequest.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ClientRequestType" />
+      <Property Name="ClientRequestStatus" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Comments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CRM.Domain.Model.ClientRequest" Collapsed="true">
+    <Position X="11.5" Y="6" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Request\ClientRequest.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CRM.Domain.Model.ManagerNotificaton" Collapsed="true">
+    <Position X="8.25" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Notification\Notificaton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRM.Domain.Model.Notificaton" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Notification\Notificaton.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Status" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CRM.Domain.Model.ClientNotificaton" Collapsed="true">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Notification\Notificaton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRM.Domain.Model.Role" Collapsed="true">
+    <Position X="4" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\User\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRM.Domain.Model.Manager" Collapsed="true">
+    <Position X="4" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAgAAAAAgAAAIAAAAAAA=</HashCode>
+      <FileName>Domain\Model\User\Manager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Order" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tasks" />
+      <Property Name="Notificatons" />
+      <Property Name="Roles" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CRM.Domain.Model.Comment" Collapsed="true">
+    <Position X="11.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAAAAAAAAAAAAIAAgAAAAAAAAAAQAACAAAAAA=</HashCode>
+      <FileName>Domain\Model\Common\Comment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CRM.Domain.Model.ProductStock" Collapsed="true">
+    <Position X="10.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAEgAAAAAA=</HashCode>
+      <FileName>Domain\Model\Product\ProductStock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CRM.IIdentityUser" Collapsed="true">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\User\IIdentityUser.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CRM.Domain.Model.ITask" Collapsed="true">
+    <Position X="8.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Task\ITask.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CRM.Domain.Model.IClientRequest" Collapsed="true">
+    <Position X="13" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Request\IClientRequest.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CRM.Domain.Model.IOrder" Collapsed="true">
+    <Position X="3.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Order\IOrder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CRM.Domain.Model.IProduct" Collapsed="true">
+    <Position X="8.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Product\IProduct.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CRM.Domain.Model.INotificaton" Collapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Notification\INotificaton.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CRM.Domain.Model.OrderStatus" Collapsed="true">
+    <Position X="1.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAgAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Order\OrderStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CRM.Domain.Model.ContactType" Collapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Domain\Model\Common\ContactType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CRM.Domain.Model.AddressType" Collapsed="true">
+    <Position X="7.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Common\AddressType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CRM.Domain.Model.AttachmentType" Collapsed="true">
+    <Position X="7.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Common\DocumentType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CRM.Domain.Model.ClientRequestType" Collapsed="true">
+    <Position X="11.5" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Request\ClientRequestType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CRM.Domain.Model.ClientRequestStatus" Collapsed="true">
+    <Position X="11.5" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Request\ClientSupportRequestStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CRM.Domain.Model.OrderItemStatus" Collapsed="true">
+    <Position X="4.5" Y="13.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Order\OrderItemStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CRM.Domain.Model.ProductStatus" Collapsed="true">
+    <Position X="7.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAABAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Product\ProductStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CRM.Domain.Model.NotificationStatus" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAEAAAAAAQAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Notification\Notificaton.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
