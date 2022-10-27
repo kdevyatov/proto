@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="CRM.Service.Notification.NotificationStrategy">
-    <Position X="6.5" Y="2.5" Width="4" />
+    <Position X="6.5" Y="4" Width="4" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Service\Notification\NotificationStrategy.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="CRM.Service.Notification.NotificationService">
-    <Position X="1" Y="1" Width="4" />
+  <Class Name="CRM.Service.Notification.NotificationService" Collapsed="true">
+    <Position X="1" Y="2.5" Width="4" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
       <FileName>Service\Notification\NotificationService.cs</FileName>
@@ -17,12 +17,20 @@
     <ShowAsAssociation>
       <Property Name="Strategy" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="CRM.Core.IStrategy&lt;T&gt;" Collapsed="true">
-    <Position X="6.5" Y="1.25" Width="2" />
+  <Interface Name="CRM.Core.IStrategy&lt;T, N&gt;">
+    <Position X="6.5" Y="2.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Core\IStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CRM.Service.Notification.INotificationService">
+    <Position X="1" Y="0.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Service\Notification\INotificationService.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

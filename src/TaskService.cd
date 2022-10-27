@@ -30,7 +30,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="CRM.Core.IStrategy&lt;T, N&gt;">
-    <Position X="6.25" Y="3.25" Width="2.5" />
+    <Position X="6.25" Y="3.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Core\IStrategy.cs</FileName>
