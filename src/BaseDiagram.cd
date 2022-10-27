@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Comment CommentText="Документ&#xD;&#xA;версия 1.0.1">
-    <Position X="0.5" Y="0.5" Height="0.939" Width="1.306" />
+  <Comment CommentText="Документ&#xD;&#xA;версия 1.0.3">
+    <Position X="0.5" Y="0.5" Height="0.772" Width="1.212" />
   </Comment>
   <Class Name="CRM.Domain.Model.Client" Collapsed="true">
     <Position X="2" Y="3.25" Width="1.5" />
@@ -77,7 +77,7 @@
   <Class Name="CRM.Domain.Model.Task" Collapsed="true">
     <Position X="7.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAIAAAAIAA=</HashCode>
       <FileName>Domain\Model\Task\Task.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -85,6 +85,7 @@
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Comments" />
+      <Property Name="Tasks" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CRM.Domain.Model.Contact" Collapsed="true">
@@ -202,7 +203,7 @@
       <FileName>Domain\Model\User\Client.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CRM.Domain.Model.Manager" Collapsed="true">
+  <Class Name="CRM.Domain.Model.Manager">
     <Position X="4" Y="3.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAgAAAAAgAAAIAAAAAAA=</HashCode>
@@ -212,9 +213,9 @@
       <Property Name="Order" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
-      <Property Name="Tasks" />
       <Property Name="Notificatons" />
       <Property Name="Roles" />
+      <Property Name="Tasks" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CRM.Domain.Model.Comment" Collapsed="true">
@@ -230,6 +231,13 @@
     <TypeIdentifier>
       <HashCode>EAACAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAEgAAAAAA=</HashCode>
       <FileName>Domain\Model\Product\ProductStock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRM.Domain.Model.ManagerTask" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Model\Task\ManagerTask.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="CRM.IIdentityUser" Collapsed="true">

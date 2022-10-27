@@ -3,8 +3,8 @@ using CRM.Domain.Model;
 
 namespace CRM.Core
 {
-    public interface IStrategy<T>
+    public interface IStrategy<T, N>
     {
-        Func<T, NotificationStatus> Resolve(T notification);
+        Func<T, N> Resolve(T entity);
     }
 }

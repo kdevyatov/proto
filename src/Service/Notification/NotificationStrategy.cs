@@ -4,7 +4,7 @@ using CRM.Domain.Model;
 
 namespace CRM.Service.Notification
 {
-    public class NotificationStrategy : IStrategy<INotificaton>
+    public class NotificationStrategy : IStrategy<INotificaton, NotificationStatus>
     {
         public Func<INotificaton, NotificationStatus> Resolve(INotificaton notification)
         {

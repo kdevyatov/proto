@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="Если менеджер не назначен для задачи автоматически, он должен быть назначен вручную старшим оператором.">
+    <Position X="6.375" Y="6.146" Height="0.687" Width="3.085" />
+  </Comment>
+  <Class Name="CRM2.Service.Task.TaskService" Collapsed="true">
+    <Position X="3.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAUAAEAAAgAAABAAAAA=</HashCode>
+      <FileName>Service\Task\TaskService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Strategy" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CRM2.Service.Task.TaskManagerSelectionStrategy">
+    <Position X="6.25" Y="4.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service\Task\TaskManagerSelectionStrategy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="CRM2.Service.Task.ITaskService">
+    <Position X="1" Y="0.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAUAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>Service\Task\ITaskService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CRM.Core.IStrategy&lt;T, N&gt;">
+    <Position X="6.25" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IStrategy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

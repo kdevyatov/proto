@@ -5,7 +5,7 @@ namespace CRM.Service.Notification
 {
     public interface INotificationService
     {
-        IStrategy<INotificaton> Strategy { get; set; }
+        IStrategy<INotificaton, NotificationStatus> Strategy { get; set; }
         NotificationStatus Send(INotificaton notificaton);
     }
 }

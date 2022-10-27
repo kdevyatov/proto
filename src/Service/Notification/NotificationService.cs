@@ -6,9 +6,9 @@ namespace CRM.Service.Notification
 
     public class NotificationService : INotificationService
     {
-        public IStrategy<INotificaton> Strategy { get; set; }
+        public IStrategy<INotificaton, NotificationStatus> Strategy { get; set; }
 
-        public NotificationService(IStrategy<INotificaton> strategy)
+        public NotificationService(IStrategy<INotificaton, NotificationStatus> strategy)
         {
             Strategy = strategy;
         }
