@@ -8,11 +8,11 @@ namespace CRM2.Service.Product
 {
     public class ProductService: IProductService
     {
-        private readonly IRepository<CDM.IProduct> m_RepoProduct; 
+        private readonly IRepository<CDM.IProduct> productRepository; 
 
         ProductService(IRepository<CDM.IProduct> repoProduct)
         {
-            m_RepoProduct = repoProduct ?? throw new ArgumentNullException(nameof(repoProduct));
+            productRepository = repoProduct ?? throw new ArgumentNullException(nameof(repoProduct));
         }
 
         public Guid Add(CDM.IProduct entity)
