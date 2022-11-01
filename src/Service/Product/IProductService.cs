@@ -14,7 +14,7 @@ namespace CRM2.Service.Product
         void Delete(IProduct entity);
         void Update(IProduct entity);
         void UpdateProducts(List<IProduct> products);
-        void SetActivity(bool @switch);
+        void SetActivity(Guid id,bool @switch);
         bool GetActivity(Guid id);
 
         void SetProductStatus(ProductStatus status);

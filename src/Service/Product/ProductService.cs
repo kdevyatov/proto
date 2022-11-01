@@ -6,13 +6,13 @@ using System.Text;
 
 namespace CRM2.Service.Product
 {
-    public class ProductService: IProductService
+    public class ProductService : IProductService
     {
         private readonly IRepository<CDM.IProduct> productRepository; 
 
-        ProductService(IRepository<CDM.IProduct> repoProduct)
+        ProductService(IRepository<CDM.IProduct> productRepo)
         {
-            productRepository = repoProduct ?? throw new ArgumentNullException(nameof(repoProduct));
+            productRepository = productRepo ?? throw new ArgumentNullException(nameof(productRepo));
         }
 
         public Guid Add(CDM.IProduct entity)
@@ -65,7 +65,7 @@ namespace CRM2.Service.Product
             throw new NotImplementedException();
         }
 
-        public void SetActivity(bool @switch)
+        public void SetActivity(Guid id,bool @switch)
         {
             throw new NotImplementedException();
         }

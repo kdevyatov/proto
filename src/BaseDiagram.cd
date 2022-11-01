@@ -138,6 +138,7 @@
       <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>Domain\Model\Product\ProductCategory.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="CRM.Domain.Model.Category" Collapsed="true">
     <Position X="10.25" Y="14" Width="1.5" />
@@ -148,6 +149,7 @@
     <ShowAsAssociation>
       <Property Name="ProductCategory" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="CRM.Domain.Model.ClientSupportRequest" Collapsed="true">
     <Position X="11.5" Y="7" Width="2" />
@@ -269,7 +271,7 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="CRM.Domain.Model.IProduct" Collapsed="true">
-    <Position X="8.75" Y="11" Width="1.5" />
+    <Position X="11.75" Y="13.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Domain\Model\Product\IProduct.cs</FileName>
