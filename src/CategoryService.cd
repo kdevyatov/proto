@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CRM2.Service.Category.CategoryService">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAYAIAAAAAQAAAAAAAAAAAAAAAFEAIAAAAABQAAAAIA=</HashCode>
+      <FileName>Service\Category\CategoryService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="IRepository" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CRM2.Service.Category.CategoryRepository" Collapsed="true">
+    <Position X="13" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAII=</HashCode>
+      <FileName>Service\Category\CategoryRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="CRM2.Service.Category.ICategoryService" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAYAAAAAAAQAAAAAAAAAAAAAAAFEAIAAAAAAQAAAAIA=</HashCode>
+      <FileName>Service\Category\ICategoryService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CRM2.Core.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="13.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAII=</HashCode>
+      <FileName>Core\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
