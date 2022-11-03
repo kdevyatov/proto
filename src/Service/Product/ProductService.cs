@@ -15,6 +15,14 @@ namespace CRM2.Service.Product
             productRepository = repoProduct ?? throw new ArgumentNullException(nameof(repoProduct));
         }
 
+        public ProductRepository ProductRepository
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public Guid Add(IProduct entity)
         {
             throw new NotImplementedException();

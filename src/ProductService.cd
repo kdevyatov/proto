@@ -3,9 +3,12 @@
   <Class Name="CRM2.Service.Product.ProductService">
     <Position X="2.25" Y="4" Width="3.75" />
     <TypeIdentifier>
-      <HashCode>EAYABQAAAAQAAAAAAQAIAAAAAQNAAAAAAAAAAAAAAJI=</HashCode>
+      <HashCode>EAYABQAAAAQAAAAAAQAIAAAAAQNAAAAAAAEAAAAAAJI=</HashCode>
       <FileName>Service\Product\ProductService.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ProductRepository" />
+    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="CRM2.Service.Product.ProductRepository">
