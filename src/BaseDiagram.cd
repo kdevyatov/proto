@@ -3,18 +3,18 @@
   <Comment CommentText="Документ&#xD;&#xA;версия 1.0.3">
     <Position X="0.5" Y="0.5" Height="0.772" Width="1.212" />
   </Comment>
-  <Class Name="CRM.Domain.Model.Client" Collapsed="true">
+  <Class Name="CRM.Domain.Model.Client">
     <Position X="2" Y="3.25" Width="1.5" />
     <AssociationLine Name="Orders" Type="CRM.Domain.Model.Order" ManuallyRouted="true">
       <Path>
-        <Point X="3.025" Y="3.941" />
+        <Point X="3.025" Y="4.247" />
         <Point X="3.025" Y="5.249" />
         <Point X="3.025" Y="5.249" />
         <Point X="3.025" Y="12.5" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>BAFAAAAAAAAAAAAAABAAAAAAAgAAAAAiAAAAAAAAAAA=</HashCode>
+      <HashCode>BAFAAAAAAAAAAAEAABAAAAAAAgAAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>Domain\Model\User\Client.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -24,6 +24,7 @@
       <Property Name="Notificatons" />
       <Property Name="SupportRequests" />
       <Property Name="Roles" />
+      <Property Name="Attachments" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CRM.Domain.Model.Attachment" Collapsed="true">
@@ -138,6 +139,7 @@
       <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>Domain\Model\Product\ProductCategory.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="CRM.Domain.Model.Category" Collapsed="true">
     <Position X="10.25" Y="14" Width="1.5" />
@@ -148,6 +150,7 @@
     <ShowAsAssociation>
       <Property Name="ProductCategory" />
     </ShowAsAssociation>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="CRM.Domain.Model.ClientSupportRequest" Collapsed="true">
     <Position X="11.5" Y="7" Width="2" />

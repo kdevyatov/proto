@@ -20,7 +20,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="CRM2.Service.Product.IProductService" Collapsed="true">
-    <Position X="1.5" Y="3" Width="1.5" />
+    <Position X="1.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAYABAAAAAQAAAAAAQAIAAAAAQNAAAAAAAAAAAAAAJI=</HashCode>
       <FileName>Service\Product\IProductService.cs</FileName>

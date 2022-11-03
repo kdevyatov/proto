@@ -16,7 +16,7 @@ namespace CRM.Domain.Model
     {
         public ICollection<Address> Addresses { get; set; }
         public ICollection<Order> Orders { get; set; }
-        public ICollection<Attachment> Documents { get; set; }
+        public ICollection<Attachment> Attachments { get; set; }
         public ICollection<Contact> Contacts { get; set; }
         public ICollection<ClientNotificaton> Notificatons { get; set; }
         public ICollection<ClientSupportRequest> SupportRequests { get; set;  }
