@@ -1,5 +1,5 @@
-﻿using CRM2.Core;
-using CDM = CRM.Domain.Model;
+﻿using CRM.Domain.Model;
+using CRM2.Domain.Model.Product;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,24 +8,24 @@ namespace CRM2.Service.Product
 {
     public class ProductService: IProductService
     {
-        private readonly IRepository<CDM.IProduct> productRepository; 
+        private readonly IRepository<IProduct> productRepository; 
 
-        ProductService(IRepository<CDM.IProduct> repoProduct)
+        ProductService(IRepository<IProduct> repoProduct)
         {
             productRepository = repoProduct ?? throw new ArgumentNullException(nameof(repoProduct));
         }
 
-        public Guid Add(CDM.IProduct entity)
+        public Guid Add(IProduct entity)
         {
             throw new NotImplementedException();
         }
 
-        public List<Guid> AddProducts(List<CDM.IProduct> entities)
+        public List<Guid> AddProducts(List<IProduct> entities)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(CDM.IProduct entity)
+        public void Delete(IProduct entity)
         {
             throw new NotImplementedException();
         }
@@ -35,17 +35,17 @@ namespace CRM2.Service.Product
             throw new NotImplementedException();
         }
 
-        public CDM.IProduct GetById(Guid id)
+        public IProduct GetById(Guid id)
         {
             throw new NotImplementedException();
         }
 
-        public List<CDM.IProduct> GetProductsByCategory(CDM.ProductCategory category)
+        public List<IProduct> GetProductsByCategory(ProductCategory category)
         {
             throw new NotImplementedException();
         }
 
-        public List<CDM.IProduct> GetProductsByCategoryAndActivity(CDM.ProductCategory category, bool @switch)
+        public List<IProduct> GetProductsByCategoryAndActivity(ProductCategory category, bool @switch)
         {
             throw new NotImplementedException();
         }
@@ -55,32 +55,32 @@ namespace CRM2.Service.Product
             throw new NotImplementedException();
         }
 
-        public int GetQuantityByCategory(CDM.ProductCategory category)
+        public int GetQuantityByCategory(ProductCategory category)
         {
             throw new NotImplementedException();
         }
 
-        public int GetQuantityByCategoryAndActivity(CDM.ProductCategory category, bool @switch)
+        public int GetQuantityByCategoryAndActivity(ProductCategory category, bool @switch)
         {
             throw new NotImplementedException();
         }
 
-        public void SetActivity(bool @switch)
+        public void SetActivity(Guid id, bool @switch)
         {
             throw new NotImplementedException();
         }
 
-        public void SetProductStatus(CDM.ProductStatus status)
+        public void SetProductStatus(ProductStatus status)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(CDM.IProduct entity)
+        public void Update(IProduct entity)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdateProducts(List<CDM.IProduct> products)
+        public void UpdateProducts(List<IProduct> products)
         {
             throw new NotImplementedException();
         }
